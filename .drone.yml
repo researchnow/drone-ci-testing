@@ -17,7 +17,7 @@ pipeline:
     image: plugins/slack
     webhook:
       from_secret: slack_webhook
-    channel: system_events
+    channel: pe-alerts
     username: Builds
     template: >
       {{#success build.status}}
