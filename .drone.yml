@@ -5,6 +5,11 @@ pipeline:
     commands:
       - go build
       - go test
+  
+  fetch:
+    image: alpine/git
+    commands: 
+      - git clone https://github.com/researchnow/go-macadamia-client.git
       
   run_bash:
     group: build
