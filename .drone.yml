@@ -38,3 +38,4 @@ pipeline:
         > author: {{build.author}}
         > github commit: <https://github.com/{{ repo.owner }}/{{ repo.name }}/commit/{{build.commit}}|{{truncate build.commit 8}}>
       {{/success}}
+    depends_on: [run_bash, fetch]
