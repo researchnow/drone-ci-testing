@@ -9,7 +9,7 @@ pipeline:
   fetch:
     image: alpine/git
     commands: 
-      - git clone https://github.com/researchnow/go-macadamia-client.git
+      - git clone https://github.com/grv231/Wordpress-Kubernetes-Cluster.git
       
   run_bash:
     group: build
